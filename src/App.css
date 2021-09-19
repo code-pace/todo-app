@@ -1,38 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+:root {
+  /* Primary */
+
+--BrightBlue: hsl(220, 98%, 61%);
+--CheckBackground: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+/* Light Theme */
+
+--VeryLightGray: hsl(0, 0%, 98%);
+--VeryLightGrayishBlue: hsl(236, 33%, 92%);
+--LightGrayishBlue: hsl(233, 11%, 84%);
+--DarkGrayishBlue: hsl(236, 9%, 61%);
+--VeryDarkGrayishBlueII: hsl(235, 19%, 35%);
+
+/* Dark Theme */
+
+--VeryDarkBlue: hsl(235, 21%, 11%);
+--VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+--LightGrayishBlue: hsl(234, 39%, 85%);
+--LightGrayishBlueHover: hsl(236, 33%, 92%);
+--GrayishBlue: hsl(234, 11%, 52%);
+--VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+--VeryDarkGrayishBlueI: hsl(237, 14%, 26%);
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
+  height: 100%;
+  font-family: 'Josefin Sans';
+  background: var(--VeryDarkDesaturatedBlue);
+  transition: 0.5s all ease-out 0.1s;
+}
+.bg-light {
+  background: var(--VeryLightGrayishBlue);
+  color: var(--VeryLightGray);
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-header {
+  background: url(./images/bgDesktopDark.jpg);
+  width: 100%;
+  height: 30vh;
+  transition: 0.5s all ease-out 0.1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.todo-headerII {
+  background: url(./images/bgDesktopLight.jpg);
+}
+.set-bg {
+  width: 480px;
+  height: initial;
+}
+.bg-mode {
+  width: 100%;
+  color: var(--VeryLightGray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.bg-mode h1 {
+  font-weight: 700;
+  font-size: 24;
+  letter-spacing: 10px;
+}
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--DarkGrayishBlue);
+  font-family: 'josefin Sans';
+  cursor: pointer;
+}
+button:hover {
+  color: var(--BrightBlue);
+}
+.text-section {
+  width: 100%;
+  height: 50px;
+  background: var(--VeryDarkGrayishBlueI);
+  border-radius: 6px;
+  padding: 0 15px;
+  transition: 0.5s all ease-out 0.1s;
+}
+.text-section-light {
+  background: var(--VeryLightGray);
+}
+.text-section-light .textBox input {
+  color: var(--VeryDarkGrayishBlueII);
+}
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+.textBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.textBox button, .textBox input {
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+}
+.textBox div {
+  width:10%;
+}
+.textBox input {
+  width: 90%;
+  font-size: 16px;
+  color: var(--LightGrayishBlue);
+  font-family: 'Josefin Sans';
+  margin-left: 4px;
+}
+.todo-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.todo-section {
+  background: var(--VeryDarkGrayishBlueI);
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+  border-radius: 6px;
+  color: var(--LightGrayishBlue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: 0.5s all ease-out 0.1s;
+  margin: 5px 0;
+  box-shadow: 0 5px 15px 1px var(--VeryDarkBlue);
 }
 
-.App-link {
-  color: #61dafb;
+.todo-section-light {
+  background: var(--VeryLightGray);
+  color: var(--VeryDarkBlue);
+  box-shadow: 0 5px 15px 1px var(--LightGrayishBlue);
+}
+.list {
+  width: 480px;
+  height: 100%;
+  border-bottom: 1px solid var(--DarkGrayishBlue);
+  padding: 10px 15px;
+}
+.todo-items {
+  width: 100%;
+  display: flex;
+  word-wrap: break-word;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-items div {
+  display: flex;
+  align-items: center;
+}
+.todo-time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 13px;
+  color: var(--VeryLightGrayishBlue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.todo-items div p{
+  margin-left: 20px;
+}
+.textBox div button {
+  color: var(--VeryLightGray);
+  background: var(--CheckBackground);
+}
+.todo-items div button, .textBox div button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--DarkGrayishBlue);
+  border-radius: 50%;
+  transition: 0.5s border ease-out 0.2s;
+}
+.todo-items div .del {
+  border: none;
+}
+.btn-check {
+  background: var(--CheckBackground);
+}
+.todo-stroke {
+  text-decoration: line-through;
+  color: var(--DarkGrayishBlue);
+}
+.todo-items div button:hover, .textBox div button:hover {
+  border: 1.2px solid var(--BrightBlue);
+}
+.todo-options {
+  width: 100%;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--DarkGrayishBlue);
+}
+.todo-container .text{
+  font-size: 14px;
+  color: var(--DarkGrayishBlue);
+  margin: 20px 0;
+}
+.status {
+  color: var(--BrightBlue);
+}
+.todo-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin: 0 10px;
+}
+.todo-action > div {
+  margin: 5px;
+}
+@media (max-width: 480px) {
+  .todo-header {
+    background: url(./images/bgMobileDark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
+  .todo-headerII {
+    background: url(./images/bgMobileLight.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .set-bg {
+    width: 90%;
+    max-width: 400px;
+    height: initial;
+  }
+  .todo-section, .list {
+    width: 90%;
+    max-width: 400px;
   }
 }
