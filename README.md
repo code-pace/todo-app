@@ -55,7 +55,6 @@ Users should be able to:
 - Desktop-first workflow
 - [React](https://reactjs.org/) - JS library
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -76,5 +75,5 @@ The Todo app challenge gave me better insight on state handling from learning ho
 
 ## Acknowledgments
 
-I owe a hat to devEd for his great intuitive youtube tutorial on react projects including the todo-app his approach in handling users todo data by saving it on their browser using the local storage api, also to colby Fayock for simple breakdown of the react DnD feature which made the app fun to interact with and finally to frontendmentor for organizing a portofolio project for both beginners and senior frontend developers.
+I owe a hat to devEd for his great intuitive youtube tutorial on react projects including the todo-app his approach in handling users todo data by saving it on their browser using the local storage api, also to Colby Fayock for simple breakdown of the react DnD feature which made the app fun to interact with and finally to frontendmentor for organizing a portofolio project for both beginners and senior frontend developers.
 
