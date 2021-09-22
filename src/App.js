@@ -19,13 +19,20 @@ function App() {
   useEffect(()=> {
     setDragTodo(showTodo);
   }, [showTodo]);
+  // removing from useEffect 
+  // if(todoList.length !== 0) {
+  //   saveTodo();
+  // }else {
+  //   getTodo();
+  // }
   useEffect(()=> {
-    if(todoList.length === 0) {
-      getTodo();
-    }else {
-      saveTodo();
-    }
+    getTodo();
+  }, []);
+  
+  useEffect(()=> {
+    saveTodo();
   }, [dragTodo]);
+
   const saveTodo=()=> {
     localStorage.setItem("todo", JSON.stringify(dragTodo));
   }

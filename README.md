@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Frontend Mentor - Todo app solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The todo app challenge is designed to equip the task handler with data manipulating skills while handling different use cases, storing the todo data on the user browser to enable todo data retention else being deleted by user and finally draggable todo list reordering while keeping track of time when a todo task is created.
 
-### `yarn test`
+### The challenge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users should be able to:
 
-### `yarn build`
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add new todos to the list
+- Mark todos as complete
+- Delete todos from the list
+- Filter by all/active/complete todos
+- Clear all completed todos
+- Toggle light and dark mode
+- **Bonus**: Drag and drop to reorder items on the list
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](./src/images/TodoAppScreenshot.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Solution URL: [Github link](https://github.com/code-pace/todo-app)
+- Live Site URL: [todo-app](https://github.com/code-pace/todo-app)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Built with
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Desktop-first workflow
+- [React](https://reactjs.org/) - JS library
 
-## Learn More
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Todo app challenge gave me better insight on state handling from learning how to interact with object array using the map and filter javascript functions I was sort and loop through arrays, the drag and drop feature using the react-beautiful-dnd package through yarn and finally how to store data on browser using the local storage api.
 
-### Code Splitting
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Build a todo app by DevEd](https://www.youtube.com/watch?v=pCA4qpQDZD8&t=4671s) - This helped me add a feature of storing on user browser using local storage api.
+- [How to Add Drag and Drop in React with React Beautiful DnD](https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/?__cf_chl_captcha_tk__=pmd_j3B3PFoA6LKBjy5mf73zfGrAZaUd5v.mNmPj101pPeE-1632350181-0-gqNtZGzNAxCjcnBszQf9) - This is an amazing article by Colby Fayock which helped me finally understand the react drag and drop. I'd recommend it to anyone still learning this concept.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+- Website - [todo-App](https://code-pace.github.io/todo-app/)
+- Frontend Mentor - [@code-pace](https://www.frontendmentor.io/profile/code-pace)
+- Twitter - [@code_pace](https://www.twitter.com/code_pace)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I owe a hat to devEd for his great intuitive youtube tutorial on react projects including the todo-app his approach in handling users todo data by saving it on their browser using the local storage api, also to colby Fayock for simple breakdown of the react DnD feature which made the app fun to interact with and finally to frontendmentor for organizing a portofolio project for both beginners and senior frontend developers.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
