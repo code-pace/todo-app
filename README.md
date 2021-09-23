@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github link](https://github.com/code-pace/todo-app)
-- Live Site URL: [todo-app](https://github.com/code-pace/todo-app)
+- Live Site URL: [todo-app](https://code-pace.github.io/todo-app/)
 
 ## My process
 
