@@ -19,16 +19,11 @@ function App() {
   useEffect(()=> {
     setDragTodo(showTodo);
   }, [showTodo]);
-  // removing from useEffect 
-  // if(todoList.length !== 0) {
-  //   saveTodo();
-  // }else {
-  //   getTodo();
-  // }
+  
   useEffect(()=> {
     getTodo();
   }, []);
-  
+
   useEffect(()=> {
     saveTodo();
   }, [dragTodo]);
